@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    file:///C:/tacos?usermane=name+&password=&color=%23d93030&num=76
+    <button>Outside form</button>
+    <form action="/tacos">
+        <!--lets add button-->
+    <button type="submit">
+       Please do not Submit the form
+    </button>
+    <p>
+        <labelfor="usermane">Enter a Username:</labelfor=>
+        <input id="username" type="text" placeholder="usermane" name="usermane">
+    </p>
+    <!--lets add button-->
+    <button>
+        In the middle!
+    </button>
+    <p>
+        <label for="password">Enter a Pasword:</label>
+        <input type="password" placeholder="enter pasword" id="password" name="password">
+    </p>
+    <p>
+        <label for="color">Enter a Color:</label>
+        <input type="color" id="color" name="color">
+    </p>
+
+    <p>
+        <label for="number" placeholder="min" min="1" max="1000">Enter a Number:</label>
+        <input type="number" placeholder="enter a number" id="number" name="num">
+    </p>
+      <!--lets add button-->
+    <button>
+        Submit
+    </button>  
+    <input type="submit" value="Click me!">
+    </form>
+    <hr>
+    
+    <h2>Hijacking Searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search"> <!--here i add reddit.com page to search from my page-->
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Search Google</h3>
+<form action="https://www.google.com/search"> <!--here i add google to search from my page-->
+    <input type="text" name="q"> 
+    <button>Search Google</button> <!--here i add google to search from my page-->
+</form>
+   
+<h3>Search Youtobe</h3>
+<!--Will add Youtobe --> <!-- Youtobe hase another syntax/pattern-->
+https://www.youtube.com/results?search_query=istambul
+
+<form action="https://www.youtube.com/results"> <!--here i add YOUTOBE-->
+    <input type="text" name="search_query"> <!-- aty esh katrori per te kerkuare-->
+    <button>Search Youtobe</button> <!-- aty esh katrori per kopsen/butoni-->
+</form>
+
+<hr>
+<h2>More Inputs!</h2>
+<h3>checkbox</h3>
+<form action="/birds"> <!--here i added a CHECKBOX-->
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="agree">I agree to everything</label>
+    <p>
+        <!-- here is similar check boox butt u must select only one option-->
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs">
+        <label for="s">S:</label>
+        <input type="radio" name="size" id="s" value="smal">
+        <label for="m">M:</label>
+        <input type="radio" name="size" id="m" value="medium">
+    </p>
+<hr>
+    <p>
+        <!--Optional button-->
+        <label for="meal">Please Select an Entree</label>
+        <select name="meal" id="meal">
+            <option value="fish" selected>Fish</option>
+            <option value="veg" selected>Vegetarian</option>
+            <option value="steak">Steak</option>
+        </select>
+    </p>
+    <hr>
+    <p>
+        <!--Range type button-->
+        <label for="cheese">Amount of Cheese</label>
+        <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_level">
+    </p>
+<hr>
+    <p>
+       <label for="requests">Any special requests?</label> 
+       <br>
+    <textarea id="requests" rows="10" cols="40" name="Requests?" placeholder="Type something here"></textarea>
+    </p>
+    <button>Submit</button>
+</form>
+
+<!--Exercise -->
+<p> EXERCISE: Forms Practice Exercise
+    Let's get some practice with forms, inputs, labels, and buttons! Write a simple form with the following inputs:
+        Username;  Text Input;   Should have placeholder text of 'username'; 
+          Make sure to properly label the input (using id/for attributes); Password; Password Input; Should have placeholder text of 'password'
+    
+    <br>
+    Make sure to properly label the input (using id/for attributes)
+    <br>
+    A Button
+    <br>
+    With the inner text 'Register'
+    <br>
+    I added in some <div> elements for spacing, but you don't need to:</p>
+<form>
+    <label for="username">Username</label>
+    <input type="text" placeholder="username" id="username">
+    <label for="password">Password</label>
+    <input type="password" placeholder="password" id="password">
+    <button>Register</button>
+</form>
+
+<hr>
+<!--Validation demo-->
+<h2>
+Validation Demo
+</h2>
+<form action="/dummy">
+    <label for="first">Enter first name</label>
+    <input type="text" name="first" id="first">
+<p>
+    <label for="username">Username</label>
+    <input type="text" id="usermane" name="username" minlength="5" maxlength="20">
+</p>
+<p>
+   <input type="email" required> 
+   <input type="url">
+</p>
+    <button>
+    Submit
+</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise for FORMS</title>
+    <!--Register Form-->
+  </head>
+  <body>
+    <h1>Race Registration!</h1>
+
+    <form action="">
+      <div>
+        <label for="first">First Name</label>
+        <input type="text" id="first" name="firstname" required />
+        <label for="last">Last Name</label>
+        <input type="text" id="last" name="lastname" required />
+      </div>
+
+      <p>Select a Race:</p>
+      <div>
+        <!--below we do Radio Buttons-->
+        <!-- the name RACE we will keep for all the three buttons so to be conected all -->
+        <input type="radio" name="race" id="funrun" value="funrun" />
+        <label for="funrun">Fun Run 5k</label>
+      </div>
+      <div>
+        <!-- the radio button two-->
+        <input type="radio" name="race" id="half" value="half" />
+        <label for="half">Half Marathon</label>
+      </div>
+      <div>
+        <!-- the radio button three-->
+        <input type="radio" name="race" id="full" value="full" />
+        <label for="full">Full marathon</label>
+      </div>
+
+      <div>
+        <!--we add email here-->
+        <label for="email">Email</label>
+        <input type="emai" name="email" id="email" required />
+        <!-- the pasword-->
+        <label for="pasword">Pasword</label>
+        <input type="password" name="password" id="pasword" required />
+      </div>
+
+      <div>
+        <!--select option-->
+        <label for="division">Select Age Group</label>
+        <select name="division" id="division">
+          <option value="kids">under 18</option>
+          <option value="youngadults">18-30</option>
+          <option value="adults">30-50</option>
+          <option value="seniors">50+</option>
+        </select>
+      </div>
+
+      <!--we need a button to submit-->
+      <button>Register</button>
+    </form>
+  </body>
+</html>
