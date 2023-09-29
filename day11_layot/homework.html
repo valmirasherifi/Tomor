@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="../imagE/png" href="../imagE/favicon.png"> <!--to inser a Y favicon symbol-->
+  <title>Yes!</title>
+  <style>
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Style the header*/
+header {
+    background-color: rgb(0, 169, 145);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/*create two colums/ boxes that floats next to each other*/
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /*only for demonstration, 
+    should be removed*/
+    background: #ccc;
+    padding: 0;
+}
+nav ul {
+    list-style: none;
+    padding: o;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /*only  for demonstration, should be remuved*/
+}
+
+/*Clear floats after the columns*/
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/*Style footer*/
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*Responsive layot - makes the two columns/boxes
+ stack on top of each other instead of next to each
+ other, on small screens*/
+ @media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+ }
+
+</style>
+
+</head>
+<body>
+    <h2>CSS Layot Float template</h2>
+<p>In this example, we have created a header, two colums/boxes and a footer. In smaller screens, the colums will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+<p>Here i have all my homeworks from the seavus academy, enjoy the evaluation ;)!</p>
+<header>
+    <h2>Homeworks</h2>
+    
+</header>
+
+<section>
+    <nav>
+        <!-- nav  Defines a set of navigation links-->
+        <ul> 
+            <li><a href="aboutValmiraSHerifi.hmtl.txt">About</a></li>
+            <li><a href="homeworkpage.html">Homeworks</a></li>
+            <li><a href="projectpage.html">Projects</a></li>
+            <li><a href="sourcespage.html">Sources</a></li>
+            <li><a href="videopage.html">Videos</a></li>
+       
+        </ul>
+    </nav>
+
+    <article>
+        <h1>Recap</h1>
+        <p>So here u can find more about my work while stadying in the Seavus academy for programming</p>
+        <p></p>
+
+    </article>
+</section>
+<footer>
+    <footer>
+        <p>Author: Valmira Sherifi</p>
+        <p><a href="mailto:valmirasherifi@gmail.com">valmirasherifi@gmail.com</a></p>
+        <p>Contact: mob 077 758 100</p>
+      </footer>
+  
+</footer>
+
+
+</body>
+</html>
