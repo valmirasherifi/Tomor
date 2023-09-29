@@ -1,0 +1,16 @@
+.box {
+  background: #2bd34a;
+  border-radius: 6px;
+  height: 95px;
+  width: 95px;
+  line-height: 95px;
+  text-align: center;
+  /*Transition properties*/
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.box:hover {
+  background: #ff7b29;
+}
