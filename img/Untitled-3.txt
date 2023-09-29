@@ -1,0 +1,19 @@
+/*this is a comment
+Data types in variables
+undefined hasnt been defined
+null means nothing
+boolean meeans true or fals talks abut strings
+symbol
+number
+object can store a lot of pairs
+Variable allows to stroe data, shes as a box. var myName = "Youssef"
+myName = 8
+let ourName = "freeCodeCamp"
+const pi = 3.14 (you can never changed)
+
+
+
+
+
+
+*/
